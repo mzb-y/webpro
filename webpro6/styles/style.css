@@ -1,0 +1,31 @@
+html {
+    background-color: rgba(63, 127, 191, 0.4);
+}
+
+body {
+    width: 800px;
+    margin: 10 auto;
+    background-color: rgba(63, 191, 127, 0.3);
+    padding: 20px 20px 20px 20px;
+    border: 5px solid grey;
+}
+
+h1 {
+    margin: 0;
+    padding: 20px 0;
+    color: #00539F;
+    text-shadow: 3px 3px 1px white;
+}
+
+div.radio {
+    margin: 10px auto;
+}
+
+div.submit {
+    margin: 10px auto;
+}
+
+p.generatedStory {
+    background-color: rgb(234, 234, 20);
+    margin: 10 auto;
+}

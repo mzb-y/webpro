@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="../src/style/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <h1>Story Generator</h1>
+
+    <div class="form">
+        <label for="customName">
+            Enter custom name
+        </label>
+        <input type="text" id="customName" class="customName" placeholder="here">
+    </div>
+
+    <div class="radio">
+        <form id="selectCountry">
+            <input type="radio" name="country" value="US" checked="checked">US
+            <input type="radio" name="country" value="UK">UK
+        </form>
+
+    </div>
+
+    <div class="submit">
+        <input type="submit" value="Generate random story" class="paramsSubmit">
+    </div>
+
+    <div class="result">
+        <p class="generatedStory"></p>
+    </div>
+</body>
+
+<style src="main.js"></style>
+
+</html>
