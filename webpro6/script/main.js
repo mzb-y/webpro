@@ -33,39 +33,39 @@ function story_generator() {
     var regExp = /:insert[a-z]:/g;
 
     // copy 
-    new_story = story;
+    newStory = story;
 
     // get custom name
     var customName = document.querySelector('.customName').value;
 
     if (customName !== "") {
-        new_story = new_story.replace("Bob", customName);
+        newStory = newStory.replace("Bob", customName);
     }
 
     // replace /:insert[x-z]:/g with x_array element
-    while (/:insertx:/.exec(new_story) !== null) {
+    while (/:insertx:/.exec(newStory) !== null) {
         new_story = new_story.replace(":insertx:", x_array[random_num]);
     }
 
-    while (/:inserty:/.exec(new_story) !== null) {
-        new_story = new_story.replace(":inserty:", y_array[random_num]);
+    while (/:inserty:/.exec(newStory) !== null) {
+        newStory = newStory.replace(":inserty:", y_array[random_num]);
     }
 
     while (/:insertz:/.exec(new_story) !== null) {
-        new_story = new_story.replace(":insertz:", z_array[random_num]);
+        newStory = newStory.replace(":insertz:", z_array[random_num]);
     }
 
     // get country
     var country = document.getElementById('selectCountry').country.value;
 
     if (country === "UK") {
-        new_story = new_story.replace("94", 94 - 32);
-        new_story = new_story.replace("fahrenheit", "Celsius");
-        new_story = new_story.replace("300", Math.round(300 * 0.0714286));
-        new_story = new_story.replace("pounds", "stones");
+        newStory = newStory.replace("94", 94 - 32);
+        newStory = newStory.replace("fahrenheit", "Celsius");
+        newStory = newStory.replace("300", Math.round(300 * 0.0714286));
+        newStory = newStory.replace("pounds", "stones");
     }
 
-    newStory.textContent = new_story;
+    newStory.textContent = newStory;
 }
 
 // set function on paramsSubmit button
