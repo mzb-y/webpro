@@ -44,14 +44,14 @@ function story_generator() {
 
     // replace /:insert[x-z]:/g with x_array element
     while (/:insertx:/.exec(newStory) !== null) {
-        new_story = new_story.replace(":insertx:", x_array[random_num]);
+        newStory = newStory.replace(":insertx:", x_array[random_num]);
     }
 
     while (/:inserty:/.exec(newStory) !== null) {
         newStory = newStory.replace(":inserty:", y_array[random_num]);
     }
 
-    while (/:insertz:/.exec(new_story) !== null) {
+    while (/:insertz:/.exec(newStory) !== null) {
         newStory = newStory.replace(":insertz:", z_array[random_num]);
     }
 
